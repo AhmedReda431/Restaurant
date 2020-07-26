@@ -1,0 +1,212 @@
+@media(min-width:768px){
+    header nav .nav-list li{
+        position: relative;
+        transition: all .4s ease-in-out;
+        
+    }
+    header nav .nav-list li::before{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: #fff;
+        width: 0;
+        /* display: none; */
+        transition: width .5s ease-in-out;
+    }
+    header.sticky nav .nav-list li::before{
+        background-color: #000;
+    }
+    header nav .nav-list li:hover::before{
+        /* display: block; */
+        width: 100%;
+    }
+    header nav .nav-list li:last-of-type:hover .icon{
+        right: -5px;
+    }
+    header.sticky nav li a:hover, header.sticky nav li a:focus{
+        color: #000;
+    }
+}
+@media(max-width:767px){
+    header nav .nav-btn{
+        display: inline-block;
+    }
+    header nav.active .nav-btn {
+        background-color: #484343;
+        line-height: 1;
+        border-radius: 5px;
+    }
+    header nav:not(.active) .nav-list li{
+        right: -200px;
+    }
+    header nav .nav-btn{
+        background: none;
+        border: none;
+        width: 50px;
+        margin-top: 16px;
+    }
+    header nav .nav-list{
+        position: absolute;
+        right: 0;
+        top: 100px;
+        padding:0;
+    }
+    header nav .nav-list li{
+        display: block;
+        margin: 0;
+        margin-bottom: 10px;
+        background-color: #333;
+        text-align: center;
+        border-bottom: 2px solid #000;
+        transition: right .2s ease-in-out;
+        position: relative;
+        right: 0;
+    }
+    header nav .nav-list li a{
+        padding: 10px 40px;
+        display: block;
+        border-right: 3px solid #252525;
+    }
+    header nav .nav-list li:hover , header nav .nav-list li:active{
+        background-color: #000;
+    }
+    header nav .nav-btn:focus ,header nav .nav-btn:active {
+        border: none;
+        outline: none;
+    }
+    header nav .nav-btn .btn-line{
+        display: block;
+        height: 2px;
+        margin-bottom: 6px;
+        background-color: #fff;
+    }
+    header  nav .nav-list li {
+        color: #fff;
+    }
+    header nav .nav-list li:nth-of-type(2){
+        transition-delay: .2s;
+    }
+    header nav .nav-list li:nth-of-type(3){
+        transition-delay: .4s;
+    }
+    header nav .nav-list li:nth-of-type(4){
+        transition-delay: .6s;
+    }
+    header nav .nav-list li:last-of-type{
+        transition-delay: .8s;
+    }
+    .section{
+        height: auto;
+    }
+
+    .chief-testemonials .chief-img::before {
+        position: absolute;
+        content: "";
+        width: 73%;
+        height: 14%;
+        right: 0px;
+        bottom: 0;
+        background-image: url(../images/dots.png);
+        z-index: -1;
+    }
+    .news .location .call{
+        margin-top: 50px;
+    }
+    footer .footer-links ul li {
+        padding: 0 11px;
+    }
+    footer .footer-links ul li::after {
+        margin: 0 13px;
+    }
+    footer .footer-links {
+        padding: 40px 0
+    }
+    .news .map{
+        margin-top: 30px;
+    }
+    .chief-review{
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+    .chief-img {
+        display: none;
+    }
+
+}
+
+
+@media(max-width:766.98px){
+    .main-section{
+        padding-top: 20%;
+        text-align: left !important;
+    }
+    .main-section .welcome{
+        text-align: left !important;
+    }
+    .main-section .hidden-xs{
+        display: none;
+    }
+}
+@media(min-width:767px) and (max-width:991.98px){
+    .main-section .hidden-xs img{
+        width: 100%;
+    }
+    .news .location .aust p{
+        font-size: 20px;
+    }
+    .news .location .aust h3{
+        font-size: 24px;
+    }
+    .chief-testemonials img {
+        margin-left: 31%;
+    }
+    .chief-testemonials .chief-img::before {
+        height: 20%;
+    }
+    .chief-testemonials .myCarousel {
+        height: 270px;
+    }
+}
+
+
+@media(max-width:767px){
+    .cooking{
+        padding-top: 50px !important;
+    }
+
+    .cooking h2{
+        font-size: 40px;
+    }
+     .cooking .row{
+         display: block;
+     }
+     .cooking .cooking-info{
+         text-align: center;
+     }
+     .cooking .cooking-info p:first-of-type{
+         text-align: left;
+         padding-left: 10px;
+     }
+     .cooking .cooking-info button{
+         margin-bottom: 30px;
+     }
+     .cooking .video::before{
+         left:-30px ;
+         bottom: -30px;
+     }
+}
+
+
+@media(max-width:767px){
+    .cooking .video{
+        margin: auto;
+        float: none;
+    }
+    .autumn .cards .card{
+        margin-bottom: 20px;
+    }
+}
